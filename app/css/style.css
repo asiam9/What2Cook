@@ -1,0 +1,175 @@
+.cover {
+	background-image:linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('../img/cover.JPG');
+	background-size:cover;
+	background-position: center center;
+	height:100vh;
+	overflow:hidden;
+	width:100%;
+}
+
+.signInContainer {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.signUpContainer {
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* Customize sign up container */
+@media (min-width: 768px) {
+  .signUpContainer {
+    max-width: 730px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  	padding-right: 15px;
+  	padding-left: 15px;
+  	padding-top: 19px;
+  	color: #777;
+  	border-top: 1px solid #e5e5e5;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.intro {
+	color: #ffffff;
+}
+
+.intro-section {
+	font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 28px;
+	text-align: center;
+	margin-bottom: 5vh;
+	padding-top: 10vh;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section {
+	padding-top: 30vh;
+  }
+}
+
+.colored-text {
+	color: #ff9933!important;
+}
+
+.standard-button {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 3px;
+	padding: 15px 30px;
+	margin: 5px;
+	line-height: inherit;
+	color: #ffffff!important;
+	border: 1px solid #ff9933;
+	-webkit-transition: all ease 0.25s;
+	transition: all ease 0.25s;
+}
+.standard-button:hover {
+	background-color:#ff9933!important;
+}
+
+.secondary-button-white {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 3px;
+	padding: 14px 30px;
+	border: 0;
+	margin: 5px;
+	border: 1px solid #727272;
+	color: #ffffff;
+	background: transparent;
+	line-height: inherit;
+	border: 1px solid rgba(255,255,255,0.1);
+	-webkit-transition: all ease 0.25s;
+	transition: all ease 0.25s;
+}
+.secondary-button-white:hover {
+    border: 1px solid rgba(255,255,255,1);
+    color: #ffffff;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+.btn-custom {
+	border-radius: 3px;
+	padding: 14px 30px;
+	margin: 5px;
+}
